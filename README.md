@@ -28,31 +28,40 @@ A modern, responsive portfolio website built with React, TypeScript, and cutting
 
 🚀 **[View Live Demo](https://coder7657.github.io/portfolio2)** - Experience the portfolio in action
 
-*Note: Live demo link will be updated once deployment is configured.*
+> **📝 Live Demo Setup Guide**
+>
+> To set up your own live demo:
+> 1. Fork this repository
+> 2. Enable GitHub Pages in your repository settings
+> 3. Set the source to "Deploy from a branch" and select `main` branch
+> 4. Update the demo link above to point to your GitHub Pages URL
+> 5. The demo will be available at: `https://[your-username].github.io/portfolio2`
+>
+> *Note: Live demo link will be updated once deployment is configured.*
 
 ## Features
 
 ### Core Sections
 
-- **Hero Section**: Eye-catching landing area with animated elements and professional introduction
-- **About Section**: Comprehensive personal background and professional summary  
-- **Skills Section**: Interactive showcase of technical expertise and competencies
-- **Experience Section**: Detailed professional journey and key achievements
-- **Portfolio Section**: Curated project gallery with live demonstrations
-- **Contact Section**: Professional contact information and social media links
+• **Hero Section**: Eye-catching landing area with animated elements and professional introduction
+• **About Section**: Comprehensive personal background and professional summary
+• **Skills Section**: Interactive showcase of technical expertise and competencies
+• **Experience Section**: Detailed professional journey and key achievements
+• **Portfolio Section**: Curated project gallery with live demonstrations
+• **Contact Section**: Professional contact information and social media links
 
 ### Design Elements
 
-- **Glassmorphism Components**: Modern glass-effect UI elements with backdrop blur
-- **Parallax Background**: Smooth scrolling visual effects for enhanced user experience
-- **Professional Navigation**: Clean, responsive navigation system with smooth transitions
-- **GSAP Animations**: High-performance animations throughout the interface
-- **Material-UI Integration**: Consistent, accessible component design system
+• **Glassmorphism Components**: Modern glass-effect UI elements with backdrop blur
+• **Parallax Background**: Smooth scrolling visual effects for enhanced user experience
+• **Professional Navigation**: Clean, responsive navigation system with smooth transitions
+• **GSAP Animations**: High-performance animations throughout the interface
+• **Material-UI Integration**: Consistent, accessible component design system
 
 ## Tech Stack
 
 | Technology | Purpose | Version |
-|------------|---------|----------|
+|-----------|---------|----------|
 | React | Frontend Framework | 18.x |
 | TypeScript | Type Safety | Latest |
 | Vite | Build Tool | Latest |
@@ -66,16 +75,16 @@ A modern, responsive portfolio website built with React, TypeScript, and cutting
 
 ### System Requirements
 
-- **Node.js**: Version 16.0.0 or higher
-- **Package Manager**: npm (comes with Node.js) or yarn
-- **Operating System**: Windows, macOS, or Linux
+• **Node.js**: Version 16.0.0 or higher
+• **Package Manager**: npm (comes with Node.js) or yarn
+• **Operating System**: Windows, macOS, or Linux
 
 ### Browser Support
 
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
+• Chrome 90+
+• Firefox 88+
+• Safari 14+
+• Edge 90+
 
 ## Installation & Setup
 
@@ -105,7 +114,6 @@ npm --version   # Should return npm version
    ```bash
    npm run dev
    ```
-
    The application will be available at `http://localhost:5173`
 
 ## Scripts
@@ -127,9 +135,10 @@ npm run build
 ```
 
 Generates an optimized production build in the `dist/` directory with:
-- Minified JavaScript and CSS
-- Tree-shaken dependencies
-- Optimized assets
+
+• Minified JavaScript and CSS
+• Tree-shaken dependencies
+• Optimized assets
 
 ### Preview Production Build
 
@@ -143,10 +152,10 @@ Serve the production build locally for testing before deployment.
 
 This project is optimized for static hosting services:
 
-- **Vercel**: Zero-configuration deployment
-- **Netlify**: Drag-and-drop deployment
-- **GitHub Pages**: Integrated static site hosting
-- **Firebase Hosting**: Google's static hosting solution
+• **Vercel**: Zero-configuration deployment
+• **Netlify**: Drag-and-drop deployment
+• **GitHub Pages**: Integrated static site hosting
+• **Firebase Hosting**: Google's static hosting solution
 
 ## Project Structure
 
@@ -174,16 +183,21 @@ portfolio2/
 ├── package.json           # Dependencies and scripts
 ├── tsconfig.json          # TypeScript configuration
 ├── tsconfig.node.json     # Node-specific TypeScript config
-├── vite.config.ts         # Vite build configuration
+├── vite.config.ts         # Vite build configuration (primary)
+├── vite.config.js         # Legacy Vite config (⚠️ duplicate - consider removing)
 └── README.md              # Project documentation
 ```
 
+> **⚠️ Configuration Note**: This project contains both `vite.config.ts` and `vite.config.js` files. 
+> The TypeScript version (`vite.config.ts`) is the primary configuration. 
+> Consider removing the JavaScript version to avoid confusion.
+
 ### Key Files
 
-- **`App.portfolio.tsx`**: Main application component integrating all sections and themes
-- **`theme.ts`**: Material-UI theme configuration and customization
-- **`components/`**: Reusable React components for different portfolio sections
-- **`vite.config.ts`**: Vite build tool configuration and optimization settings
+• **App.portfolio.tsx**: Main application component integrating all sections and themes
+• **theme.ts**: Material-UI theme configuration and customization
+• **components/**: Reusable React components for different portfolio sections
+• **vite.config.ts**: Vite build tool configuration and optimization settings
 
 ## Customization
 
@@ -191,42 +205,42 @@ portfolio2/
 
 Modify `src/theme.ts` to customize:
 
-- **Color Palette**: Primary, secondary, and accent colors
-- **Typography**: Font families, sizes, and weights
-- **Component Styling**: Default component appearances
-- **Breakpoints**: Responsive design breakpoints
+• **Color Palette**: Primary, secondary, and accent colors
+• **Typography**: Font families, sizes, and weights
+• **Component Styling**: Default component appearances
+• **Breakpoints**: Responsive design breakpoints
 
 ### Component Styling
 
 Each component in `src/components/` can be customized:
 
-- **Glassmorphism Effects**: Update `GlassmorphismButton.tsx` and `GlassmorphismCard.tsx`
-- **Animations**: Modify GSAP animations in individual section components
-- **Responsive Layouts**: Adjust breakpoints and styling for different screen sizes
+• **Glassmorphism Effects**: Update `GlassmorphismButton.tsx` and `GlassmorphismCard.tsx`
+• **Animations**: Modify GSAP animations in individual section components
+• **Responsive Layouts**: Adjust breakpoints and styling for different screen sizes
 
 ### Content Updates
 
-- **Personal Information**: Update `AboutSection.tsx` with your background
-- **Skills & Technologies**: Modify `SkillsSection.tsx` with your expertise
-- **Professional Experience**: Update `ExperienceSection.tsx` with your career history
-- **Project Showcase**: Customize `PortfolioSection.tsx` with your projects
-- **Contact Details**: Update `ContactSection.tsx` with your information
+• **Personal Information**: Update `AboutSection.tsx` with your background
+• **Skills & Technologies**: Modify `SkillsSection.tsx` with your expertise
+• **Professional Experience**: Update `ExperienceSection.tsx` with your career history
+• **Project Showcase**: Customize `PortfolioSection.tsx` with your projects
+• **Contact Details**: Update `ContactSection.tsx` with your information
 
 ## Design Features
 
-- **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
-- **Modern Aesthetics**: Clean, professional appearance with glassmorphism effects
-- **Smooth Animations**: GSAP-powered transitions and micro-interactions
-- **Accessibility**: WCAG 2.1 AA compliant with ARIA labels and keyboard navigation
-- **Performance Optimized**: Efficient rendering with minimal bundle size
+• **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices
+• **Modern Aesthetics**: Clean, professional appearance with glassmorphism effects
+• **Smooth Animations**: GSAP-powered transitions and micro-interactions
+• **Accessibility**: WCAG 2.1 AA compliant with ARIA labels and keyboard navigation
+• **Performance Optimized**: Efficient rendering with minimal bundle size
 
 ## Performance
 
-- **TypeScript**: Enhanced type safety and improved developer experience
-- **Vite**: Lightning-fast build tool with hot module replacement
-- **Tree Shaking**: Automatic removal of unused code for smaller bundles
-- **Code Splitting**: Optimized loading strategies for better performance
-- **Modern Web Standards**: ES2020+ features with automatic polyfills
+• **TypeScript**: Enhanced type safety and improved developer experience
+• **Vite**: Lightning-fast build tool with hot module replacement
+• **Tree Shaking**: Automatic removal of unused code for smaller bundles
+• **Code Splitting**: Optimized loading strategies for better performance
+• **Modern Web Standards**: ES2020+ features with automatic polyfills
 
 ## Contributing
 
@@ -242,18 +256,18 @@ We welcome contributions to improve this portfolio template! Please follow these
 
 ### Development Guidelines
 
-- Follow TypeScript best practices
-- Maintain consistent code formatting
-- Add tests for new features
-- Update documentation as needed
-- Ensure responsive design compatibility
+• Follow TypeScript best practices
+• Maintain consistent code formatting
+• Add tests for new features
+• Update documentation as needed
+• Ensure responsive design compatibility
 
 ### Code Style
 
-- Use TypeScript for all new components
-- Follow the existing component structure
-- Implement proper error handling
-- Add appropriate TypeScript types
+• Use TypeScript for all new components
+• Follow the existing component structure
+• Implement proper error handling
+• Add appropriate TypeScript types
 
 ## License
 
@@ -261,12 +275,12 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 ## Acknowledgements
 
-- **React Team**: For the amazing React framework
-- **Material-UI**: For the comprehensive component library
-- **GSAP**: For powerful animation capabilities
-- **Vite**: For the fast build tool and development experience
-- **TypeScript**: For enhanced developer experience and type safety
-- **Open Source Community**: For inspiration and contributions
+• **React Team**: For the amazing React framework
+• **Material-UI**: For the comprehensive component library
+• **GSAP**: For powerful animation capabilities
+• **Vite**: For the fast build tool and development experience
+• **TypeScript**: For enhanced developer experience and type safety
+• **Open Source Community**: For inspiration and contributions
 
 ---
 
